@@ -1,4 +1,5 @@
 #load the packages
+library(e1071)
 library(tm)
 library(wordcloud)
 library(gmodels)
@@ -78,11 +79,11 @@ CrossTable(testPredict, testLabels,dnn = c('predicted', 'actual'))
 ##              | actual 
 ##    predicted |       ham |      spam | Row Total | 
 ## -------------|-----------|-----------|-----------|
-##          ham |      1200 |        23 |      1223 | 
+##          ham |      1201 |        21 |      1222 | 
 ##              |     0.981 |     0.019 |     0.880 | 
 ##              |     0.993 |     0.127 |           | 
 ## -------------|-----------|-----------|-----------|
-##         spam |         9 |       158 |       167 | 
+##         spam |         8 |       160 |       168 | 
 ##              |     0.054 |     0.946 |     0.120 | 
 ##              |     0.007 |     0.873 |           | 
 ## -------------|-----------|-----------|-----------|
